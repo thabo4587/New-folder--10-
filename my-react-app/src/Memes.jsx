@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { IconButton } from '@mui/material';
+import { Twitter, Tumblr } from '@mui/icons-material';
 import './index.css';
 
 const memes = [
@@ -73,18 +75,18 @@ const Memes = () => {
         </div>
       </div>
       <div className="flex mt-4">
-        <button
-          className="mr-2 p-2 bg-blue-500 text-white rounded"
+        <IconButton
+          className="mr-2"
           onClick={prevMeme}
         >
-          Previous
-        </button>
-        <button
-          className="ml-2 p-2 bg-blue-500 text-white rounded"
+          <Twitter />
+        </IconButton>
+        <IconButton
+          className="ml-2"
           onClick={nextMeme}
         >
-          Next
-        </button>
+          <Tumblr />
+        </IconButton>
       </div>
     </div>
   );
