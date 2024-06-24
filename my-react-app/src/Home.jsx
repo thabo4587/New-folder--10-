@@ -1,4 +1,3 @@
-// src/SignUp.jsx
 import React from 'react';
 import { FaFacebook, FaTwitter, FaGoogle, FaGithub } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
@@ -8,8 +7,8 @@ const SignUp = () => {
 
   const handleSignUp = () => {
     // Add any sign-up logic here (e.g., form validation, API call)
-    // Navigate to the landing page after successful sign-up
-    navigate('/');
+    // Navigate to the calculator page after successful sign-up
+    navigate('/memes');
   };
 
   return (
@@ -52,7 +51,7 @@ const SignUp = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500 mx-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-500 w-full mx-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
               onClick={handleSignUp}
             >
